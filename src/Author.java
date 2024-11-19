@@ -2,7 +2,7 @@ public class Author {
     String name = "Sarah";
     String lastName = "Konor";
 
-    public Author (String name, String lastName) {
+    public Author(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;
     }
@@ -10,6 +10,7 @@ public class Author {
     public String getName() {
         return this.name;
     }
+
     public String getLastName() {
         return this.lastName;
     }

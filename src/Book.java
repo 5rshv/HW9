@@ -20,7 +20,6 @@ public class Book {
     public void setAge(int age) {
         this.age = age;
     }
-
     public void setAuthor(String author) {
         this.author = author;
     }
