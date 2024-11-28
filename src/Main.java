@@ -1,18 +1,24 @@
 public class Main {
     public static void main(String[] args) {
 
-Author sarah = new Author("Sarah", "Konor");
-        sarah.setName("JON");
-        String a = sarah.getLastName() +" "+ sarah.getName();
-        Book age = new Book(a,12);
-        age.setAge(123);
-        System.out.println(a + " "+ age.getAge());
+        Author avtor1 = new Author("Александр", "Сергеевич", "Пушкин");
+        Author avtor2 = new Author("Владимир", "Владимирович", "Маяковский");
+        Author avtor3 = new Author("Иван", "Алексеевич", "Бунин");
 
 
-        Book book = new Book("Dostoevskii", 1956);
-        Book book1 = new Book("Pushkin", 1973);
+
+        Book book = new Book(avtor1.toString(), 1917, "Биография");
+        Book book1 = new Book(avtor2.toString(),1913, "Биография");
+        Book book2 = new Book(avtor3.toString(), 1917, "Биография");
+//сравнивает хэшкод по строке age
+        System.out.println(book.hashCode()==book2.hashCode());
+//сравнивает икваелс по строке age
+        System.out.println((book.equals(book2)));
+
+
         book.setAge(1900);
-        System.out.println("book = " + book.getAge() +" "+ book.getAuthor());
-        System.out.println("book1 = " + book1.getAge() +" "+ book1.getAuthor());
+        System.out.println("book = " + book);
+        System.out.println("book1 = " + book1);
+        System.out.println("book2 = " + book2);
     }
 }
